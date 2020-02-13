@@ -8,7 +8,10 @@ server.use(express.json());
 
 server.get("/", (req, res) => {
   const songs = [
-    { id: 1, name: "Final Countdown", secret: process.env.SECRET },
+    { id: 1,
+       name: "Down With The Sickness",
+       artist: "Disturbed",
+        secret: process.env.SECRET },
   ];
 
   res.status(200).json(songs);
